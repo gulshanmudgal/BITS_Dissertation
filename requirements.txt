@@ -1,0 +1,31 @@
+# User Affinity Modeling - Requirements
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tqdm>=4.65.0
+
+# Machine Learning Utilities
+scikit-learn>=1.2.0
+
+# Hugging Face (for dataset download)
+huggingface-hub>=0.16.0
+datasets>=2.14.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# PDF Processing (optional, for reading dissertation PDFs)
+PyPDF2>=3.0.0
+
+# Serialization
+pickle5>=0.0.11; python_version < "3.8"
