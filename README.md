@@ -45,12 +45,17 @@ The notebook will:
 ```
 Project_Code/
 ├── notebooks/
-│   ├── complete_preprocessing_pipeline.ipynb  #  Main notebook
-│   └── data_exploration.ipynb                 # EDA after preprocessing
-├── data/                                      # Output directory (auto-created)
-├── README.md                                  # This file
-├── PROJECT_STRUCTURE.md                       # Detailed structure
-└── requirements.txt                           # Dependencies
+│   ├── 01_data_pipeline_and_eda.ipynb     # Data preprocessing + EDA
+│   ├── 02_matrix_factorization.ipynb      # MF baseline model
+│   ├── 03_lstm_recommender.ipynb          # LSTM sequential model
+│   ├── 04_bert4rec.ipynb                  # Transformer model
+│   └── 05_lightgcn.ipynb                  # Graph Neural Network
+├── data/                                   # Data directory (auto-created)
+├── models/                                 # Saved model checkpoints
+├── results/                                # Experiment results
+├── README.md                               # This file
+├── PROJECT_PLAN.md                         # Project tracking
+└── requirements.txt                        # Dependencies
 ```
 
 ---
@@ -276,8 +281,8 @@ pip install torch --index-url https://download.pytorch.org/whl/cu118
 ##  Dataset Information
 
 ### Source
-Amazon Product Data from UCSD  
-**URL**: https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
+Amazon Product Reviews Dataset from Hugging Face  
+**URL**: https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023
 
 ### Available Categories
 
@@ -411,11 +416,11 @@ Perfect for learning recommendation systems!
 
 If using this dataset for research, please cite:
 ```
-@inproceedings{mcauley2015,
-  title={Image-based recommendations on styles and substitutes},
-  author={McAuley, Julian and Targett, Christopher and Shi, Qinfeng and Van Den Hengel, Anton},
-  booktitle={SIGIR},
-  year={2015}
+@article{hou2024bridging,
+  title={Bridging Language and Items for Retrieval and Recommendation},
+  author={Hou, Yupeng and Li, Jiacheng and He, Zhankui and Yan, An and Chen, Xiusi and McAuley, Julian},
+  journal={arXiv preprint arXiv:2403.03952},
+  year={2024}
 }
 ```
 
